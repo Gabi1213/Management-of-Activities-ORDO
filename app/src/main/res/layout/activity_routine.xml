@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_routine_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoutineActivity">
+
+    <ImageButton
+        android:id="@+id/button_popup_menu_routine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="4dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Meniu Optiuni"
+        android:padding="16dp"
+        android:src="@drawable/ic_action_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/button_routine_day"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Rutina pe o zi"
+            android:layout_marginVertical="8dp"
+            android:backgroundTint="#87CEFA"
+            android:textColor="@android:color/black"
+            android:padding="15dp"/>
+
+        <Button
+            android:id="@+id/button_routine_week"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Rutina pe o săptămână"
+            android:layout_marginVertical="8dp"
+            android:backgroundTint="#87CEFA"
+            android:textColor="@android:color/black"
+            android:padding="15dp"/>
+
+        <Button
+            android:id="@+id/button_routine_custom"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Rutina costum"
+            android:layout_marginVertical="8dp"
+            android:backgroundTint="#87CEFA"
+            android:textColor="@android:color/black"
+            android:padding="15dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
